@@ -162,8 +162,9 @@ app.use((err, req, res, next) => {
     res.send('something went wrong')
 })
 
-app.listen(3000, () => {
-    console.log('port 3000 active');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`port ${port} active`);
 });
 
 
