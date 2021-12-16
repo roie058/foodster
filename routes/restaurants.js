@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const restaurants = require('../controllers/restaurants')
-const wrapAsync = require('../utils/wrapAsync');
+const wrapAsync = require('../utils/wrapasync');
 const { isLoggedIn, isAuthor, validateRestaurant } = require('../utils/middleware')
 const multer = require('multer')
 const { storage } = require('../cloudinary')
