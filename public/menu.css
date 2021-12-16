@@ -1,0 +1,9 @@
+.hovred{
+background-color: rgb(158, 83, 83);
+
+}
+
+.oneItem{
+    border:solid lightgray 1px;
+    width:fit-content;
+}
