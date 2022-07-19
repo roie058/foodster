@@ -159,19 +159,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`port ${port} active`);
 });
-
-/*app.get('/restaurants/new/:id', async (req, res) => {
-    const restaurant = await Restaurant.findById(req.params.id);
-    res.render('menu', { restaurant });
-
-});
-
-app.patch('/restaurants/:id', async (req, res) => {
-    const { id } = req.params;
-    const restaurant = await Restaurant.findByIdAndUpdate(id, { ...req.body.restaurant });
-
-
-    res.redirect(`/restaurants/${restaurant.id}`);
-
-    console.log(req.body)
-})*/
